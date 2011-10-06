@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<site>
+ <property
+    name="title">Portal do Servidor Público</property>
+ <property name="description"></property>
+ <property name="selectable_views" type="lines">
+  <element value="folder_listing"/>
+  <element value="news_listing"/>
+ </property>
+ <property name="email_from_address" type="string">site@servidorpublico.net</property>
+ <property name="email_from_name" type="string">Portal do Servidor Público</property>
+ <property name="validate_email" type="boolean">True</property>
+ <property name="email_charset" type="string">utf-8</property>
+ <property name="enable_permalink" type="boolean">True</property>
+</site>
