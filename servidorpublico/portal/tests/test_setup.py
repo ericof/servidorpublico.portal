@@ -12,8 +12,8 @@ from servidorpublico.portal.config import PROJECTNAME
 from servidorpublico.portal.testing import INTEGRATION_TESTING
 
 DEPENDENCIES = (
-    'Products.PloneFormGen',
-    'Products.Maps',
+    'PloneFormGen',
+    'Maps',
     )
 
 
@@ -46,7 +46,8 @@ class TestConfig(unittest.TestCase):
         self.pp = getattr(self.portal, 'portal_properties')
 
     def test_title(self):
-        self.failUnless('Soap' in self.portal.title, 'Title not applied')
+        self.failUnless('Portal do Servidor Público' in 
+                         self.portal.title, 'Title not applied')
 
     def test_email_configs(self):
         self.failUnless(self.portal.email_from_address,
